@@ -1,1 +1,13 @@
 # Deploying-Jenkins-Master-and-Worker-Nodes-in-AWS-Behind-an-ALB-Using-Terraform-and-Ansible
+
+
+# Setup notes
+
+```
+1. Please run the playbook "gen_ssh_key.yaml" , "ansible-playbook ansible_templates/gen_ssh_key.yaml"
+   to generate SSH keypair(on local system) used in TF templates and Ansible for connecting to
+   remote EC2 instances.
+
+2. If you still want to initialize directory via "terraform init", then use the "-backend=false" flag,
+   like so "terraform init -backend=false"
+```
